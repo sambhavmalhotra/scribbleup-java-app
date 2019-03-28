@@ -195,7 +195,7 @@
                 <version>0.7.9</version>
                 <configuration>
                     <excludes>
-                        <exclude>**/FormDesignLibrariesApp.class</exclude>
+                        <exclude>**/ScribbleUpJavaApp.class</exclude>
                     </excludes>
                 </configuration>
                 <executions>
