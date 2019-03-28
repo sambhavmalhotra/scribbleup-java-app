@@ -1,0 +1,56 @@
+Scribble Up App
+
+About
+This app is designed for demo and analysis purposes and is based on AngularJS with Java backend and h2 DB.
+It is for users to register or login and then post their thoughts or files(images) and save them. It is like a personal online diary.
+
+How to get it?
+The UI and Java are written in separate repositories.
+To get the UI app, clone the repo from git using link: https://github.com/sambhavmalhotra/scribbleUpApp.git
+To get the Java app, clone the repo from git using link: https://github.com/sambhavmalhotra/scribbleup-java-app.git
+Some instructions are mentions in Readme file in the repository.
+
+Instructions
+	UI:
+		o You must have Node.js preinstalled in your local system. To get Node.js, go to link: 
+			https://nodejs.org/en/download
+		o Now clone the UI app from git from url mentioned above.
+		o After cloning the UI repo, install the node modules by running ‘npm install’ in terminal.
+		o To check for the install, you should have a folder by name ‘node-modules’ under the ‘ScribbleUpApp’ folder.
+		o Once the install is complete, complete the installation for Java app and then run ‘npm start’ in terminal to start the application.
+		o Once successfully compiled, you can navigate to http://localhost:8080 in your browser to view the application.
+	Java:
+		o You must have Java 1.8 installed in your system. To get this version, go to link:
+			http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+		o Now clone the Java app from git from url mentioned above.
+		o This app has maven dependencies, so after cloning the app, import the dependencies in your IDE or you can also enable Auto-Import feature.
+		o Now app is to be built. There are two ways to do this: 
+		o First, run command ‘mvn clean install’ in terminal.
+		o Second, right click on parent folder and click ‘Build Module ‘scribbleup-java-app’.
+		o To check if app is built, you can see a ‘target’ folder under the main app folder.
+		o Now navigate to structure:
+			Scribbleup-java-app > src > main > java > com.scribbleup
+		  and locate for file ‘ScribbleUpJavaApp’.
+		o Now right click on this file and select ‘Create ScribbleUpJavaApp’. This will create a spring boot application to run this app directly. You can see that a new configuration has been added to the app.
+		o Now you can run the configuration the was just created with name ‘ScribbleUpApp’.
+		o The app should now be running on port 7070.
+		o The h2 DB should also be automatically created now. To view DB navigate to http://localhost:7070/h2 on the browser and then click on connect.
+		o You can complete installation of UI now and navigate to http://localhost:8080 which should have the app running.
+
+
+
+Technologies
+	UI:
+		o AngularJS (1.5.7)
+		o Bootstrap (4.1.0)
+		o jQuery (3.3.0)
+		o Webpack (1.14.0)
+		o HTML
+		o JavaScript
+		o CSS
+	Java:
+		o Java (1.8.0_151)
+		o Spring Boot (1.5.2)
+		o QueryDsl (4.1.4)
+		o H2 Database
+		o Hibernate
